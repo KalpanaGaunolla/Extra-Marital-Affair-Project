@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<h1>Women Extra Marital Affair Prediction</h1>
+
+<body style="background-color:rgb(139, 120, 12);color:white;">
+
+<form action="/predict" method=["GET","POST"]>
+   <label for="rate_marriage">Rate your marriage</label><br>
+   <input type="number" id="rate_marriage	" name="Rate_marriage"><br>
+   <label for="age">Age</label><br>
+   <input type="number" id="age" name="Age"><br>
+   <label for="yrs_married">Years married</label><br>
+   <input type="number" id="yrs_married" name="yrs_married"><br>
+   <label for="children">No of children</label><br>
+   <input type="number" id="children" name="Children"><br>
+   <label for="religious">Religious</label><br>
+   <input type="number" id="religious" name="Religious"><br>
+   <label for="educ">Education</label><br>
+   <input type="number" id="educ" name="Education"><br>
+   <label for="occupation">Occupation</label><br>
+   <input type="number" id="occupation" name="Occupation"><br>
+   <label for="occupation_husb">Husband's occupation</label><br>
+   <input type="number" id="occupation_husb" name="occupation_husb"><br>
+   <input type="submit" value="Predict"><br><br>
+
+ <h2> {{prediction_text}}</h2>
+
+</form>
+</body>
+</html>
